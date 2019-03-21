@@ -94,6 +94,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+alias his="history"
 #autoload predict-on
 #predict-on
 #source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
@@ -108,3 +110,10 @@ bindkey '^R' history-incremental-search-backward
 # https://github.com/sindresorhus/pure
 autoload -U promptinit; promptinit
 prompt pure
+# Additonal Env Variables
+export AWS_PROFILE=nebulaworks
+# Include the users homedir bin if present
+# set PATH so it includes user's private bin if it exists
+if [[ -d "$HOME/bin" ]]; then
+  PATH="$HOME/bin:$PATH"
+fi

@@ -38,3 +38,34 @@ shift + alt - 3 : chunkc tiling::window --send-to-desktop 3
 shift + alt - 4 : chunkc tiling::window --send-to-desktop 4
 shift + alt - 5 : chunkc tiling::window --send-to-desktop 5
 shift + alt - 6 : chunkc tiling::window --send-to-desktop 6
+shift + alt - 7 : chunkc tiling::window --send-to-desktop 7
+shift + alt - 8 : chunkc tiling::window --send-to-desktop 8
+shift + alt - 9 : chunkc tiling::window --send-to-desktop 9
+#shift + alt - 10 : chunkc tiling::window --send-to-desktop 10
+#shift + alt - 11 : chunkc tiling::window --send-to-desktop 11
+#shift + alt - 12 : chunkc tiling::window --send-to-desktop 12
+
+# Resize
+cmd + shift - left 	: chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge west
+cmd + shift - down 	: chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge south
+cmd + shift - up 	: chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge north
+cmd + shift - right : chunkc tiling::window --use-temporary-ratio 0.1 --adjust-window-edge east
+
+lalt + shift - right : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge west
+lalt + shift - down	 : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge south
+lalt + shift - up 	 : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge north
+lalt + shift - left  : chunkc tiling::window --use-temporary-ratio -0.1 --adjust-window-edge east
+
+# focus monitor
+ctrl + alt - z  : chunkc tiling::monitor -f prev
+ctrl + alt - c  : chunkc tiling::monitor -f next
+ctrl + alt - 1  : chunkc tiling::monitor -f 1
+ctrl + alt - 2  : chunkc tiling::monitor -f 2
+ctrl + alt - 3  : chunkc tiling::monitor -f 3
+
+# send window to monitor and follow focus
+ctrl + cmd - z  : chunkc tiling::window --send-to-monitor prev; chunkc tiling::monitor -f prev
+ctrl + cmd - c  : chunkc tiling::window --send-to-monitor next; chunkc tiling::monitor -f next
+ctrl + cmd - 1  : chunkc tiling::window --send-to-monitor 1; chunkc tiling::monitor -f 1
+ctrl + cmd - 2  : chunkc tiling::window --send-to-monitor 2; chunkc tiling::monitor -f 2
+ctrl + cmd - 3  : chunkc tiling::window --send-to-monitor 3; chunkc tiling::monitor -f 3
