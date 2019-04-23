@@ -3,9 +3,10 @@ export TERM="xterm-256color"
 #source '/Users/chrisc/google-cloud-sdk/path.zsh.inc'
 #
 # The next line enables shell command completion for gcloud.
-autoload -U compinit compdef
-compinit
+#autoload -U compinit compdef
+#compinit
 #source '/Users/chrisc/google-cloud-sdk/completion.zsh.inc'
+#
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/chrisc/.oh-my-zsh
 
@@ -39,7 +40,7 @@ ZSH_THEME=""
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
