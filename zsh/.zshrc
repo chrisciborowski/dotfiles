@@ -64,7 +64,7 @@ plugins=(git brew docker gem git-extras pip rvm vagrant)
 
 # User configuration
 
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin"
+export PATH="$HOME/.bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin"
 #export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin:/Users/chrisc/Development/dcos/dcos/bin"
 #source '/Users/chrisc/google-cloud-sdk/path.zsh.inc'
 # export MANPATH="/usr/local/man:$MANPATH"
