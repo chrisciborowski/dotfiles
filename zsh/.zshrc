@@ -8,7 +8,7 @@ export TERM="xterm-256color"
 #source '/Users/chrisc/google-cloud-sdk/completion.zsh.inc'
 #
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/chrisc/.oh-my-zsh
+export ZSH=/home/chris/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/

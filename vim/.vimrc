@@ -16,6 +16,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'raimondi/delimitmate'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ryanoasis/vim-devicons'
+Plugin 'morhetz/gruvbox'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin on
@@ -34,8 +35,6 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 let g:airline_powerline_fonts = 1
-let g:airline_theme='solarized'
-let g:solarized = 1
 let g:airline_skip_empty_sections = 1
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -56,7 +55,8 @@ let g:syntastic_json_checkers = ['jsonlint']
 let g:syntastic_filetype_map = { 'Dockerfile': 'dockerfile' }
 syntax on        "this is needed to see syntax
 set background=dark  "makes it easier to read with black background
-colorscheme solarized  "set theme in ./vim/colors folder
+let g:gruvbox_contrast_dark = "hard"
+colorscheme gruvbox  "set theme in ./vim/colors folder
 set ls=2            " allways show status line
 set hlsearch        " highlight searches
 "set incsearch       " do incremental searching
