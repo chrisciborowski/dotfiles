@@ -7,4 +7,4 @@ set -o vi
 #alias ls="ls -alh"
 alias down="cd ~/Downloads"
 alias pbcopy='xsel --clipboard --input'
-alias pbpaste='xsel --clipboard --optput'
+alias pbpaste='xsel --clipboard --output'
