@@ -1,4 +1,5 @@
 export TERM="xterm-256color"
+export EDITOR="vim"
 # The next line updates PATH for the Google Cloud SDK.
 #source '/Users/chrisc/google-cloud-sdk/path.zsh.inc'
 #
@@ -8,7 +9,7 @@ export TERM="xterm-256color"
 #source '/Users/chrisc/google-cloud-sdk/completion.zsh.inc'
 #
 # Path to your oh-my-zsh installation.
-export ZSH=/home/chris/.oh-my-zsh
+export ZSH=/home/chrisc/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -60,7 +61,8 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 #plugins=(git brew common-aliases docker gem git-extras pip redis-cli rvm vagrant)
-plugins=(git brew docker gem git-extras pip rvm vagrant)
+#plugins=(git brew docker gem git-extras pip rvm vagrant)
+plugins=(git docker gem git-extras pip rvm vagrant ssh-agent)
 
 # User configuration
 
@@ -109,6 +111,7 @@ bindkey '^R' history-incremental-search-backward
 
 # Forget the ZSH Theme, this is simple and elegant prompt installed with node
 # https://github.com/sindresorhus/pure
+fpath+=('/usr/local/lib/node_modules/pure-prompt/functions')
 autoload -U promptinit; promptinit
 prompt pure
 # Additonal Env Variables
