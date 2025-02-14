@@ -8,8 +8,9 @@ export EDITOR="vim"
 #compinit
 #source '/Users/chrisc/google-cloud-sdk/completion.zsh.inc'
 #
+#
 # Path to your oh-my-zsh installation.
-export ZSH=/home/chrisc/.oh-my-zsh
+export ZSH=/Users/chrisc/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -66,10 +67,11 @@ plugins=(git docker gem git-extras pip rvm vagrant ssh-agent)
 
 # User configuration
 
-export PATH="$HOME/.bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin"
+#export PATH="$HOME/.bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin"
 #export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin:/Users/chrisc/Development/dcos/dcos/bin"
 #source '/Users/chrisc/google-cloud-sdk/path.zsh.inc'
 # export MANPATH="/usr/local/man:$MANPATH"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/opt/homebrew/opt/ruby/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -111,7 +113,8 @@ bindkey '^R' history-incremental-search-backward
 
 # Forget the ZSH Theme, this is simple and elegant prompt installed with node
 # https://github.com/sindresorhus/pure
-fpath+=('/usr/local/lib/node_modules/pure-prompt/functions')
+#fpath+=('/usr/local/lib/node_modules/pure-prompt/functions')
+fpath+=("$(brew --prefix)/share/zsh/site-functions")
 autoload -U promptinit; promptinit
 prompt pure
 # Additonal Env Variables
